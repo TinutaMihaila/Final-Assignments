@@ -11,11 +11,11 @@ butonStanga.addEventListener("click", sliderLeft, false);
 document.onkeydown = function() {
 
     switch (window.event.keyCode) {
-                case 37:
-                      sliderRight();
-                      break;
                 case 39:
                       sliderRight();
+                      break;
+                case 37:
+                      sliderLeft();
                       break;
     }
 };

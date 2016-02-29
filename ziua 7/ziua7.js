@@ -1,3 +1,5 @@
+//am folosu angular pentru a evita scrierea multipla a aceluiasi continut
+
 var app = angular.module("myApp", []);
 
 app.directive("footerDirective", function() {
