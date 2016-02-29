@@ -23,11 +23,26 @@ function change(){
 //slider
 
 //event listener for slider
+
+//on click
 var previousButton = document.getElementsByClassName("butonul-stang");
 previousButton[0].addEventListener("click", previous, false);
 
 var nextButton = document.getElementsByClassName("butonul-drept");
 nextButton[0].addEventListener("click", next, false);
+
+//on key down
+document.onkeydown = function() {
+
+    switch (window.event.keyCode) {
+                case 39:
+                      next();
+                      break;
+                case 37:
+                      previous();
+                      break;
+    }
+};
 
 //global variables
 var content = document.getElementsByClassName('header')[0];

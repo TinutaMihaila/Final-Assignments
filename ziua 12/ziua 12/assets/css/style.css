@@ -137,6 +137,9 @@ body {
   color: #7d7d7d;
   text-decoration: none;
 }
+.first .content2 a:hover {
+  color: white;
+}
 .first ul {
   height: 100%;
 }
