@@ -1,0 +1,48 @@
+<html>
+<head>
+  <style>
+  .slide{
+    border-bottom:1px solid orange;
+    height:400px;
+    width:100%;
+    float:left;
+    width:140%;
+    overflow:hidden;
+}
+
+.slide ul li img{width:1400px;height:400px;}
+.slide ul li{display:inline-block;list-style-type:none;}
+.slide span.before img{border-radius:40px 40px 40px 40px;}
+.slide span.before img:hover{cursor:pointer;}
+.slide span.after img{border-radius:40px 40px 40px 40px;}
+.slide span.after img:hover{cursor:pointer;}
+
+.slide .reff{
+    width:100px;
+    position:relative;
+    top:-35px;
+    left:-250px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <ul>
+        <li><img src="1.jpg" alt="" /></li>
+        <li><img src="2.jpg" alt="" /></li>
+        <li><img src="3.jpg" alt="" /></li>
+    </ul>
+    <div class="reff">
+        <span class="before">
+            <img src="1.jpg" alt="" />
+        </span>
+        <span class="after">
+            <img src="1.jpg" alt="" />
+        </span>
+    </div>
+</div>
+</body>
+</html>
