@@ -1,3 +1,4 @@
+//changing images on click
 var y = document.getElementsByClassName("img1");
 
 for(var i = 0; i < y.length; i++){
@@ -21,7 +22,7 @@ function change(event){
 
 }
 
-
+//collapse informations - jquery
 $(document).ready(function(){
 
   $('#accordion').on('shown.bs.collapse hidden.bs.collapse', function (e) {
@@ -29,7 +30,7 @@ $(document).ready(function(){
   });
 });
 
-
+//changing the background / class for buttons on click
 for(var n = 0; n<3; n++){
   var product = document.getElementsByClassName("sizeD")[n].children[0];
   product.addEventListener("click", change2, false);
@@ -44,3 +45,26 @@ function change2(){
   }
   event.currentTarget.classList.add("active");
 }
+
+//increase - decrease the number of products you want to buy
+var cantitate = document.getElementsByClassName("quantity")[0].children;
+var cantitate_comandata = document.getElementsByClassName("unu")[0];
+var number = 2;
+cantitate[1].addEventListener("click", scade, false);
+cantitate[3].addEventListener("click", aduna, false);
+
+function scade(){
+  number--;
+  if(number < 0){
+    cantitate_comandata.innerHTML = 0;
+    number = 0;
+  } else {
+    cantitate_comandata.innerHTML = number;
+  }
+}
+
+function aduna(){
+  number++;
+    cantitate_comandata.innerHTML = number;
+}
+//ps: we have unlimited stoc of products
