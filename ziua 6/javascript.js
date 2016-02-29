@@ -1,3 +1,4 @@
+//changing the innerHTML on click 
 var buttons = document.getElementsByClassName("leftborder");
 for(var i = 0; i < buttons.length; i++){
   buttons[i].addEventListener("click", function(){get(this);}, false);
