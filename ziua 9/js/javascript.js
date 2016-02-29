@@ -1,5 +1,5 @@
+//change the square place on click from header
 $(document).ready(function(){
-
 
     $(".one").click(function(){
         $(this).toggleClass('active');
@@ -35,10 +35,11 @@ $(document).ready(function(){
 
 });
 
+//change the image on click
 var y = document.getElementsByClassName("img1");
 
 for(var i = 0; i < y.length; i++){
-  y[i].addEventListener("click", function(){change(this)}, false);
+  y[i].addEventListener("click", function(){change(this);}, false);
 }
 
 var bigImage = document.getElementById("bigimg");
